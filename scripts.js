@@ -21,3 +21,32 @@ function scrollRight() {
         behavior: 'smooth' // Desplazamiento suave
     });
 }
+
+function toggleSidebar() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+}
+
+
+  /* Función para mostrar/ocultar el menú principal */
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    // Cambia entre mostrar y ocultar el menú
+    if (navLinks.style.display === 'block') {
+        navLinks.style.display = 'none';
+    } else {
+        navLinks.style.display = 'block';
+    }
+}
+
+/* Función para manejar la apertura/cierre de submenús */
+document.querySelectorAll('.menu-item p').forEach(item => {
+    item.addEventListener('click', () => {
+        const submenu = item.nextElementSibling; // Selecciona el submenu correspondiente
+        if (submenu.style.display === 'block') {
+            submenu.style.display = 'none'; // Ocultar submenú
+        } else {
+            submenu.style.display = 'block'; // Mostrar submenú
+        }
+    });
+});

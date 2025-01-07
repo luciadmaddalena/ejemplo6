@@ -1,133 +1,191 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LUCHIXSERIES</title>
-    <link rel="stylesheet" href="/css/styles.css"> <!-- Conexión al archivo CSS -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Conexión al archivo CSS -->
+    <script src="scripts.js"></script> <!-- Conexión al archivo JavaScript -->
 </head>
+
 <body>
     <!-- Menú de navegación -->
     <header>
+
         <nav class="navbar">
             <div class="logo">LUCHIXSERIES</div>
-            <ul class="nav-links">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Categorías</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a></li>
-            </ul>
+            <div class="container">
+                <!-- Botón hamburguesa (icono de tres rayas) -->
+                <button class="toggle-btn" onclick="toggleMenu()">&#9776;</button>
+
+                <!-- Lista de navegación que está oculta por defecto -->
+                <ul class="nav-links">
+                    <li class="menu-item">
+                        <p>
+                            <span class="span-menu">Inicio</span>
+                            <span class="toggle-icon">▼</span>
+                        </p>
+                        <ul class="submenu">
+                            <li><a href="">Inicio Principal</a></li>
+                            <li><a href="">Novedades</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <p>
+                            <span class="span-menu">Categorías</span>
+                            <span class="toggle-icon">▼</span>
+                        </p>
+                        <ul class="submenu">
+                            <li><a href="">Drama</a></li>
+                            <li><a href="">Comedia</a></li>
+                            <li><a href="">Acción</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <p>
+                            <span class="span-menu">Contacto</span>
+                            <span class="toggle-icon">▼</span>
+                        </p>
+                        <ul class="submenu">
+                            <li><a href="">Soporte</a></li>
+                        </ul>
+                    </li>
+                </ul>
         </nav>
+        </div>
     </header>
+
 
     <!-- Sección principal con artículos -->
     <main>
         <section class="introduccion">
             <div>
-                <p>Bienvenido a LuchixSeries, una plataforma en donde realizo un ranking de mis series favoritas y peliculas de diferentes géneros , acompañadas de un pequeño argumento.</p>
-                <p class="alert">¡ATENCIÓN! La siguiente página muy posiblemente contenga spoilers. Leer bajo discresión.</p>
+                <p>Bienvenido a LuchixSeries, una plataforma en donde realizo un ranking de mis series favoritas y
+                    peliculas de diferentes géneros , acompañadas de un pequeño argumento.</p>
+                <p class="alert">¡ATENCIÓN! La siguiente página muy posiblemente contenga spoilers. Leer bajo
+                    discresión.</p>
             </div>
 
         </section>
         <section class="article-container">
             <article class="news-article">
                 <div class="article-content">
-                    <img src="/img/1imagengot.jpg" alt="Imagen del artículo 1" class="article-image">
+                    <img src="img/1imagengot.jpg" alt="Imagen del artículo 1" class="article-image">
                     <div class="text-content">
-                <h2>Game Of Thrones</h2>
-                <p>Game of Thrones (conocida como Juego de tronos) es una serie de televisión de drama y fantasía medieval desarrollada por David Benioff y D. B. Weiss y producida...</p>
-                <a href="/art/articulouno.html">Leer más</a>
+                        <h2>Game Of Thrones</h2>
+                        <p>Game of Thrones (conocida como Juego de tronos) es una serie de televisión de drama y
+                            fantasía medieval desarrollada por David Benioff y D. B. Weiss y producida...</p>
+                        <a href="art/articulouno.html">Leer más</a>
                     </div>
                 </div>
             </article>
             <article class="news-article">
                 <div class="article-content">
-                    <img src="/img/2imagenba.jpg" alt="Imagen del artículo 2" class="article-image">
+                    <img src="img/2imagenba.jpg" alt="Imagen del artículo 2" class="article-image">
                     <div class="text-content">
-                <h2>Breaking Bad</h2>
-                <p>Breaking Bad es una serie de televisión estadounidense que se emitió entre 2008 y 2013, creada y producida por Vince Gilligan. Narra la historia de Walter White, un profesor de química con problemas económicos a quien le diagnostican...</p>
-                <a href="/art/articulodos.html">Leer más</a>
+                        <h2>Breaking Bad</h2>
+                        <p>Breaking Bad es una serie de televisión estadounidense que se emitió entre 2008 y 2013,
+                            creada y producida por Vince Gilligan. Narra la historia de Walter White, un profesor de
+                            química con problemas económicos a quien le diagnostican...</p>
+                        <a href="art/articulodos.html">Leer más</a>
                     </div>
                 </div>
             </article>
             <article class="news-article">
                 <div class="article-content">
-                    <img src="/img/3imagendark.jpg" alt="Imagen del artículo 3" class="article-image">
+                    <img src="img/3imagendark.jpg" alt="Imagen del artículo 3" class="article-image">
                     <div class="text-content">
-                <h2>Dark</h2>
-                <p>Dark es una serie de televisión web alemana de suspense y ciencia ficción creada por Baran bo Odar y Jantje Friese. Situada en la ficticia ciudad de Winden (Alemania), Dark sigue las secuelas de la desaparición de un niño...</p>
-                <a href="/art/articulotres.html">Leer más</a>
+                        <h2>Dark</h2>
+                        <p>Dark es una serie de televisión web alemana de suspense y ciencia ficción creada por Baran bo
+                            Odar y Jantje Friese. Situada en la ficticia ciudad de Winden (Alemania), Dark sigue las
+                            secuelas de la desaparición de un niño...</p>
+                        <a href="art/articulotres.html">Leer más</a>
                     </div>
                 </div>
             </article>
             <article class="news-article">
                 <div class="article-content">
-                    <img src="/img/4imagenahs.jpg" alt="Imagen American Horror Story" class="article-image">
+                    <img src="img/4imagenahs.jpg" alt="Imagen American Horror Story" class="article-image">
                     <div class="text-content">
-                <h2>American Horror Story</h2>
-                <p>American Horror Story es una serie de televisión estadounidense de antología y horror creada por Ryan Murphy y Brad Falchuk para la cadena de cable FX. Cada temporada se concibe como una miniserie autónoma... </p>
-                <a href="/art/articulocuatro.html">Leer más</a>
+                        <h2>American Horror Story</h2>
+                        <p>American Horror Story es una serie de televisión estadounidense de antología y horror creada
+                            por Ryan Murphy y Brad Falchuk para la cadena de cable FX. Cada temporada se concibe como
+                            una miniserie autónoma... </p>
+                        <a href="art/articulocuatro.html">Leer más</a>
                     </div>
                 </div>
             </article>
             <article class="news-article">
                 <div class="article-content">
-                    <img src="/img/5imagentwd.jpg" alt="Imagen The Walking Dead" class="article-image">
+                    <img src="img/5imagentwd.jpg" alt="Imagen The Walking Dead" class="article-image">
                     <div class="text-content">
-                <h2>The Walking Dead</h2>
-                <p>The Walking Dead es una serie de televisión estadounidense de drama horror postapocalíptico de AMC basada en la serie de cómics homónima de Robert Kirkman, Tony Moore y Charlie Adlard. Basada en la historieta escrita por Robert Kirkman... </p>
-                <a href="/art/articulocinco.html">Leer más</a>
+                        <h2>The Walking Dead</h2>
+                        <p>The Walking Dead es una serie de televisión estadounidense de drama horror postapocalíptico
+                            de AMC basada en la serie de cómics homónima de Robert Kirkman, Tony Moore y Charlie Adlard.
+                            Basada en la historieta escrita por Robert Kirkman... </p>
+                        <a href="art/articulocinco.html">Leer más</a>
                     </div>
                 </div>
             </article>
             </article>
             <article class="news-article">
                 <div class="article-content">
-                    <img src="/img/6imagentlou.jpg" alt="Imagen the last of Us" class="article-image">
+                    <img src="img/6imagentlou.jpg" alt="Imagen the last of Us" class="article-image">
                     <div class="text-content">
-                <h2>The Last Of Us</h2>
-                <p>The Last of Us es una serie de televisión estadounidense postapocalíptica que se estrenó el 15 de enero de 2023 a través de HBO. Basada en el videojuego de 2013 del mismo nombre desarrollado por Naughty Dog. La serie sigue a Joel...</p>
-                <a href="/art/articuloseis.html">Leer más</a>
+                        <h2>The Last Of Us</h2>
+                        <p>The Last of Us es una serie de televisión estadounidense postapocalíptica que se estrenó el
+                            15 de enero de 2023 a través de HBO. Basada en el videojuego de 2013 del mismo nombre
+                            desarrollado por Naughty Dog. La serie sigue a Joel...</p>
+                        <a href="art/articuloseis.html">Leer más</a>
                     </div>
                 </div>
             </article>
             <article class="news-article">
                 <div class="article-content">
-                    <img src="/img/7imagenarc.jpg" alt="Imagen arcane" class="article-image">
+                    <img src="img/7imagenarc.jpg" alt="Imagen arcane" class="article-image">
                     <div class="text-content">
-                <h2>Arcane</h2>
-                <p>Arcane es una serie de televisión por internet animada franco-estadounidense de aventuras y drama ambientada en el universo de League of Legends. La serie fue anunciada durante las celebraciones del décimo aniversario del videojuego.Fue desarrollada...</p>
-                <a href="/art/articulosiete.html">Leer más</a>
+                        <h2>Arcane</h2>
+                        <p>Arcane es una serie de televisión por internet animada franco-estadounidense de aventuras y
+                            drama ambientada en el universo de League of Legends. La serie fue anunciada durante las
+                            celebraciones del décimo aniversario del videojuego.Fue desarrollada...</p>
+                        <a href="art/articulosiete.html">Leer más</a>
                     </div>
                 </div>
             </article>
             <article class="news-article">
                 <div class="article-content">
-                    <img src="/img/8imagendemon.jpg" alt="Imagen Demon Slayer" class="article-image">
+                    <img src="img/8imagendemon.jpg" alt="Imagen Demon Slayer" class="article-image">
                     <div class="text-content">
-                <h2>Demon Slayer</h2>
-                <p>Kimetsu No Yaiba: también conocida bajo su nombre en inglés Demon Slayer, o en español Guardianes de la noche, es una serie de manga escrita e ilustrada por Koyoharu Gotōge, cuya publicación comenzó el 15 de febrero  ...</p>
-                <a href="/art/articuloocho.html">Leer más</a>
+                        <h2>Demon Slayer</h2>
+                        <p>Kimetsu No Yaiba: también conocida bajo su nombre en inglés Demon Slayer, o en español
+                            Guardianes de la noche, es una serie de manga escrita e ilustrada por Koyoharu Gotōge, cuya
+                            publicación comenzó el 15 de febrero ...</p>
+                        <a href="art/articuloocho.html">Leer más</a>
                     </div>
                 </div>
             </article>
             <article class="news-article">
                 <div class="article-content">
-                    <img src="/img/9imagenkny.jpg" alt="Imagen Shingeki" class="article-image">
+                    <img src="img/9imagenkny.jpg" alt="Imagen Shingeki" class="article-image">
                     <div class="text-content">
-                <h2>Shingeki No Kyojin</h2>
-                <p>Shingeki No Kyojin: también conocida como Ataque a los titanes en España y Ataque de los titanes en Hispanoamérica, es una serie de manga japonesa escrita e ilustrada por Hajime Isayama. El manga...</p>
-                <a href="/art/articulonueve.html">Leer más</a>
+                        <h2>Shingeki No Kyojin</h2>
+                        <p>Shingeki No Kyojin: también conocida como Ataque a los titanes en España y Ataque de los
+                            titanes en Hispanoamérica, es una serie de manga japonesa escrita e ilustrada por Hajime
+                            Isayama. El manga...</p>
+                        <a href="art/articulonueve.html">Leer más</a>
                     </div>
                 </div>
             </article>
             <article class="news-article">
                 <div class="article-content">
-                    <img src="/img/10imagenpoke.jpg" alt="Imagen Pokemon" class="article-image">
+                    <img src="img/10imagenpoke.jpg" alt="Imagen Pokemon" class="article-image">
                     <div class="text-content">
-                <h2>Pokemon</h2>
-                <p>Ash Ketchum es un muchacho entusiasta a quien le gustan los Pokémon y las batallas. Su gran pasión por los Pokémon lo ha llevado a proponerse el objetivo de convertirse en Maestro Pokémon ...</p>
-                <a href="/art/articulodiez.html">Leer más</a>
+                        <h2>Pokemon</h2>
+                        <p>Ash Ketchum es un muchacho entusiasta a quien le gustan los Pokémon y las batallas. Su gran
+                            pasión por los Pokémon lo ha llevado a proponerse el objetivo de convertirse en Maestro
+                            Pokémon ...</p>
+                        <a href="art/articulodiez.html">Leer más</a>
                     </div>
                 </div>
             </article>
@@ -139,6 +197,7 @@
         <p>&copy; 2024. Todos los derechos reservados.</p>
     </footer>
 
-    <script src="scripts.js"></script> <!-- Conexión al archivo JavaScript -->
+
 </body>
+
 </html>
