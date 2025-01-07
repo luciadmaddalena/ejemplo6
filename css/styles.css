@@ -1,0 +1,255 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo {
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: rgba(100, 100, 100, 0.9);
+    font-size: 60px;
+    
+}
+
+.article-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.news-article {
+    width: 30%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease; /* Añadido efecto de transición */
+}
+
+/* Efecto hover que agranda el artículo */
+.news-article:hover {
+    transform: scale(1.05); /* Agranda la caja del artículo */
+}
+
+/* Contenedor de contenido dentro de cada artículo */
+.article-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.article-image {
+    width: 150px;
+    height: auto;
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    object-fit: cover; /* Asegura que la imagen se recorte proporcionalmente */
+    border-radius: 8px; /* Bordes redondeados de la imagen */
+}
+
+.text-content {
+    flex: 1; /* El texto ocupará el espacio restante */
+}
+
+.text-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.text-content a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.text-content a:hover {
+    color: #ffc;
+}
+
+
+/* Estilos para el menú de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Menú desplegable para dispositivos móviles */
+.icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #333;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .icon {
+        display: block;
+    }
+}
+
+/* Estilos de los artículos */
+
+.introduccion {
+    background-color: #ddd;
+    color: #222;
+    padding: 10px 40px;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1,5px;
+}
+
+.alert {
+    font-size: 12px;
+    text-align: center;
+}
+
+.main {
+    padding: 20px;
+    text-align: center;
+}
+
+.article-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.news-article {
+    width: 30%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.news-article h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.news-article p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.news-article a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.news-article a:hover {
+    color: #007bff;
+}
+
+.section-article {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.section-article h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.div-article {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.div-article img {
+    max-width: 150px; /* Tamaño relativamente pequeño */
+    height: auto;
+    flex-shrink: 0; /* Evita que la imagen se reduzca de tamaño */
+}
+.div-article p{
+    font-size: 1rem;
+    margin-bottom: 15px;
+    text-align: justify;
+    flex-grow: 1; /* Hace que el texto ocupe el espacio restante */
+}
+
+@media (max-width: 768px) {
+    .div-article {
+        flex-direction: column; /* Cambia el diseño para mostrar las imágenes y el texto en una sola línea */
+    }
+
+    .div-article img {
+        max-width: 100%; /* La imagen ocupa el 100% del ancho disponible */
+        margin-bottom: 15px; /* Espacio adicional debajo de la imagen */
+    }
+}
+
+/* Estilos para pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
