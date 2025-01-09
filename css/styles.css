@@ -13,7 +13,7 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 0;
     text-align: center;
 }
 
@@ -31,7 +31,7 @@ header {
     overflow-x: auto;
     gap: 20px;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .news-article {
@@ -172,7 +172,7 @@ header {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .news-article {
@@ -213,7 +213,7 @@ header {
 }
 .section-article h2 {
     font-size: 2em;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .div-article {
     display: flex;
@@ -286,38 +286,52 @@ header {
     white-space: nowrap;
 }
 
-.carousel-container {
+.carousel.container {
     position: relative;
-    width: 80%;
     overflow: hidden;
-    margin: 20px;
 }
 
 .carousel {
     display: flex;
-    transition: transform 0.5s ease;
+    max-width: 1000px;
+    gap: 20px;
 }
 
-.carousel-btn{
+.carousel.sliding-transition {
+    transition: transform 0.5s ease-in-out;
+}
+
+.arrow-button {
+    padding: 0;
     position: absolute;
     top: 50%;
-    right: 0;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    font-size: 18px;
+    color: #000;
     cursor: pointer;
-    border-radius: 5px;
+    background: rgb(255, 255, 255, 0.3);
+    width: 36px;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    -webkit-box-shadow: 5px 5px 5px -2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 5px 5px 5px -2px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 5px -2px rgba(0, 0, 0, 0.5);
 }
 
-.carousel-btn:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+span {
+    height: 100%;
+    width: 100%;
 }
 
-.right {
-    right: 10px;
+.left-arrow {
+    left: 20px;
+}
+.right-arrow {
+    right: 20px;
 }
 
 /* Estilos para pie de página */
