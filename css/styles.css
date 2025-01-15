@@ -107,6 +107,8 @@ header {
     text-align: center;
 }
 
+/*  Esta seccion es la que se deberia decidir si queda o se rehace   */
+
 .article-container {
     display: flex;
     justify-content: space-around;
@@ -182,6 +184,9 @@ header {
     }
 }
 
+
+/*  HASTA ACÁ   */
+
 .menu {
     display: flex;
     justify-content: center;
@@ -225,52 +230,11 @@ header {
     white-space: nowrap;
 }
 
-.carousel.container {
-    position: relative;
-    overflow: hidden;
-}
 
-.carousel {
-    display: flex;
-    max-width: 1000px;
-    gap: 20px;
-}
-
-.carousel.sliding-transition {
-    transition: transform 0.5s ease-in-out;
-}
-
-.arrow-button {
-    padding: 0;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #000;
-    cursor: pointer;
-    background: rgb(255, 255, 255, 0.3);
-    width: 36px;
-    font-size: 28px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    border-radius: 50%;
-    aspect-ratio: 1;
-    -webkit-box-shadow: 5px 5px 5px -2px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 5px 5px 5px -2px rgba(0, 0, 0, 0.5);
-    box-shadow: 5px 5px 5px -2px rgba(0, 0, 0, 0.5);
-}
 
 span {
     height: 100%;
     width: 100%;
-}
-
-.left-arrow {
-    left: 20px;
-}
-.right-arrow {
-    right: 20px;
 }
 
 /* Estilos para pie de página */
